@@ -5,7 +5,7 @@
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
     "test": "htmlhint && prettier --check . && npm run stylelint",
-    "start": "live-server --wait=500"
+    "start": "live-server --no-css-inject --wait=500"
   },
   "keywords": [],
   "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de)",
