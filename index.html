@@ -6,8 +6,8 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
     />
   </head>
   <body class="app-grid">
@@ -17,14 +17,24 @@
 
     <section class="navigation">
       <nav class="nav-bar">
-        <div class="nav-bar__item" aria-label="Home" href="#">
-          <i class="fas fa-home"></i>
-          <span class="nav-bar__label">Home</span>
-        </div>
+        <a href="#" class="nav-bar__link">
+          <i class="material-icons nav-bar__icon">dashboard</i>
+          <span class="nav-bar__text">Home</span>
+        </a>
 
-        <div class="nav-bar__item">Bookmark</div>
-        <div class="nav-bar__item">Create</div>
-        <div class="nav-bar__item">Login</div>
+        <a href="#" class="nav-bar__link">
+          <i class="material-icons nav-bar__icon">bookmark</i>
+          <span class="nav-bar__text">Bookmarks</span>
+        </a>
+        <a href="#" class="nav-bar__link">
+          <i class="material-icons nav-bar__icon">create</i>
+          <span class="nav-bar__text">Create</span>
+        </a>
+
+        <a href="#" class="nav-bar__link nav-bar__link--active">
+          <i class="material-icons nav-bar__icon">person</i>
+          <span class="nav-bar__text">Profile</span>
+        </a>
       </nav>
     </section>
   </body>
