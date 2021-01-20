@@ -6,6 +6,12 @@
   margin: 0px;
 }
 
-.nav-bar__item1 {
+.nav-bar__item {
   display: flex;
+  flex-flow: column;
+  text-decoration: none;
+}
+
+.nav-bar__label {
+  background: red;
 }

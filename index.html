@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
   </head>
   <body class="app-grid">
     <section class="header"></section>
+
     <section class="content"></section>
+
     <section class="navigation">
-      <div class="nav-bar">
-        <div class="nav-bar__item">Home</div>
+      <nav class="nav-bar">
+        <div class="nav-bar__item" aria-label="Home" href="#">
+          <i class="fas fa-home"></i>
+          <span class="nav-bar__label">Home</span>
+        </div>
+
         <div class="nav-bar__item">Bookmark</div>
         <div class="nav-bar__item">Create</div>
         <div class="nav-bar__item">Login</div>
-      </div>
+      </nav>
     </section>
   </body>
 </html>
