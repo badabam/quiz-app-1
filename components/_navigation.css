@@ -1,4 +1,8 @@
-.nav-bar {
+.navigation {
+  grid-row: 3/4;
+}
+
+.navigation__bar {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -9,7 +13,7 @@
   overflow-x: auto;
 }
 
-.nav-bar__link {
+.navigation__link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,13 +30,13 @@
   transition: background-color 0.1s ease-in-out;
 }
 
-.nav-bar__link:hover {
+.navigation__link:hover {
   background-color: #eeeeee;
 }
-.nav-bar__icon {
+.navigation__icon {
   font-size: 18px;
 }
 
-.nav-bar__link--active {
+.navigation__link--active {
   color: #009578;
 }
