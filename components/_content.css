@@ -1,20 +1,51 @@
 .content {
   grid-row: 2/3;
   background: lightblue;
+  overflow-y: scroll;
 }
 
 .content__container {
-  width: 200px;
-  height: 100px;
+  padding: 2px 16px;
+  width: 80%;
+  height: 200px;
   border: 2px solid hotpink;
+  margin: 2px auto 2px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
   position: relative;
 }
 
-.content__box {
+.content__botton-style {
+  font: smaller;
+}
+
+.content__answers {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  row-gap: 20px;
+}
+
+.content__answers-style {
+  display: flex;
+  overflow-x: auto;
+  border: 1px solid blue;
+  font-size: smaller;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 0 2px;
+}
+
+.content--scroll {
+  height: 2px;
+  overflow-y: auto;
+}
+
+.content__box1 {
   width: 50px;
   height: 50px;
   background: plum;
-  position: absolute;
   top: -10px;
   right: 10px;
 }
