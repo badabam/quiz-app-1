@@ -1,0 +1,11 @@
+.nav-bar {
+  width: 100%;
+  background-color: royalblue;
+  overflow: auto;
+  display: flex;
+  margin: 0px;
+}
+
+.nav-bar__item1 {
+  display: flex;
+}
