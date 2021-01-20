@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body class="app-grid">
     <section class="header"></section>
+
     <section class="content"></section>
+
     <section class="navigation">
-      <nav class="navigation_list"></nav>
+      <nav class="nav-bar">
+        <a href="#" class="nav-bar__link">
+          <i class="material-icons nav-bar__icon">dashboard</i>
+          <span class="nav-bar__text">Home</span>
+        </a>
+
+        <a href="#" class="nav-bar__link">
+          <i class="material-icons nav-bar__icon">bookmark</i>
+          <span class="nav-bar__text">Bookmarks</span>
+        </a>
+        <a href="#" class="nav-bar__link">
+          <i class="material-icons nav-bar__icon">create</i>
+          <span class="nav-bar__text">Create</span>
+        </a>
+
+        <a href="#" class="nav-bar__link nav-bar__link--active">
+          <i class="material-icons nav-bar__icon">person</i>
+          <span class="nav-bar__text">Profile</span>
+        </a>
+      </nav>
     </section>
   </body>
 </html>
