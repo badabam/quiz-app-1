@@ -1,20 +1,71 @@
 .content {
   grid-row: 2/3;
+  padding: 5px;
   background: lightblue;
+  overflow-y: scroll;
+}
+
+.content__area {
+  display: grid;
+  gap: 30px;
+  align-content: start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 .content__container {
-  width: 200px;
-  height: 100px;
+  padding: 2px 16px;
+  width: 80%;
+  height: 300px;
   border: 2px solid hotpink;
+  margin: 2px auto 2px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
   position: relative;
 }
 
-.content__box {
+.container--scroll {
+  height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.content__button {
+  background-color: #c7d5f6;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+.content__answers {
+  display: flexbox;
+  justify-content: center;
+  list-style: none;
+  height: auto;
+  margin-left: -50px;
+  font-size: 112.5%;
+}
+
+.content__answers-style {
+  display: inline-block;
+  border: 1px solid #a8bdf1;
+  font-size: smaller;
+  padding: 5px 1px;
+  margin: 0 4px;
+  text-align: center;
+}
+
+.content__bookmark {
   width: 50px;
   height: 50px;
-  background: plum;
-  position: absolute;
-  top: -10px;
+  background: rot;
+  top: 10px;
   right: 10px;
+  position: absolute;
 }

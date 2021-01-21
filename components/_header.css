@@ -1,4 +1,10 @@
 .header {
   grid-row: 1/2;
+}
+.header__bar {
   background: royalblue;
+  text-align: center;
+  color: hotpink;
+  font-size: larger;
+  align-items: center;
 }

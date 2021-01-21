@@ -1,12 +1,12 @@
-.navigation {
+.footer {
   grid-row: 3/4;
 }
 
-.navigation__bar {
+.navigation {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 55px;
+  height: 48px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   display: flex;
@@ -38,5 +38,5 @@
 }
 
 .navigation__link--active {
-  color: #009578;
+  color: royalblue;
 }
