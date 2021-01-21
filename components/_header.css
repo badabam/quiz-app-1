@@ -1,4 +1,18 @@
 .header {
   grid-row: 1/2;
   background: royalblue;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.header__title {
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.header__icon {
+  padding: 0;
 }
