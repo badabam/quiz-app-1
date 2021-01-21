@@ -1,8 +1,8 @@
-.navigation {
+.footer {
   grid-row: 3/4;
 }
 
-.navigation__bar {
+.navigation {
   position: fixed;
   bottom: 0;
   width: 100%;
