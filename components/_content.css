@@ -1,17 +1,14 @@
 .content {
   grid-row: 2/3;
-  padding: 5px;
+  padding: 5px auto;
   background: lightblue;
   overflow-y: scroll;
 }
 
 .content__area {
   display: grid;
-  gap: 30px;
+  gap: 5px;
   align-content: start;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  position: relative;
   scroll-behavior: smooth;
 }
 .content__quiz-card {
@@ -19,9 +16,10 @@
   width: 80%;
   height: 300px;
   border: 2px solid hotpink;
-  margin: 2px auto 2px;
+  margin: 30px auto 0px;
   background-color: #ffffff;
   text-align: center;
+  font-size: 18px;
   border-radius: 5px;
   position: relative;
 }
@@ -32,18 +30,59 @@
   scroll-behavior: smooth;
 }
 
-.content__button {
+[role='content__button-bookmark1'] {
+  height: 20px;
+  width: 0px;
+  border: 20px solid hotpink;
+  border-bottom-color: #ffffff;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  overflow: hidden;
+  cursor: default;
+}
+
+[role='content__button-bookmark1']:hover,
+[role='content__button-bookmark1']:focus,
+[role='content__button-bookmark1']:active {
+  background-color: #eeeeee;
+}
+
+.content__bookmark {
+  height: 20px;
+  width: 0px;
+  border: 20px solid hotpink;
+  border-bottom-color: #ffffff;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+
+[role='content__button-answer1'] {
   background-color: #c7d5f6;
   border: none;
   color: black;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  height: 20px;
+  padding: 2px;
+  width: auto;
+  cursor: default;
 }
+
+[role='content__button-answer1']:hover,
+[role='content__button-answer1']:focus,
+[role='content__button-answer1']:active {
+  background-color: #eeeeee;
+}
+
 .content__answers {
-  display: flexbox;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2px;
   justify-content: center;
   list-style: none;
   height: auto;
@@ -58,13 +97,4 @@
   padding: 5px 1px;
   margin: 0 4px;
   text-align: center;
-}
-
-.content__bookmark {
-  width: 50px;
-  height: 50px;
-  background: rot;
-  top: 10px;
-  right: 10px;
-  position: absolute;
 }

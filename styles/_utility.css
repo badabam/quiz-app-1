@@ -1,3 +1,7 @@
 .to-left {
   text-justify: left;
 }
+
+.smaller-font {
+  font-size: 10px;
+}

@@ -1,24 +1,13 @@
 .header {
-  grid-row: 1/2;
-}
-.header__bar {
   background: royalblue;
+  width: 100%;
+  height: 48px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.header__title {
   text-align: center;
-  color: hotpink;
-  font-size: larger;
+  font-size: x-large;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
-  display: flex;
   overflow-x: auto;
-  align-items: center;
-}
-
-.header__title {
-  align-items: center;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.header__icon {
-  padding: 0;
 }
