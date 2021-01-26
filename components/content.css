@@ -1,23 +1,9 @@
-.content {
-  grid-row: 2/3;
-  padding: 5px auto;
-  background: lightblue;
-  overflow-y: scroll;
-}
-
-.content__area {
-  display: grid;
-  gap: 5px;
-  align-content: start;
-  scroll-behavior: smooth;
-}
 .content__quiz-card {
   padding: 2px 16px;
   width: 80%;
   height: 300px;
-  border: 2px solid hotpink;
+  border: 2px solid var(--color-dark-blue);
   margin: 30px auto 0px;
-  background-color: #ffffff;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
@@ -30,11 +16,11 @@
   scroll-behavior: smooth;
 }
 
-[role='content__button-bookmark1'] {
+[role='button'] {
   height: 20px;
   width: 0px;
   border: 20px solid hotpink;
-  border-bottom-color: #ffffff;
+  border-bottom-color: var(--color-light-blue);
   top: 0px;
   right: 0px;
   position: absolute;

@@ -3,10 +3,16 @@
 }
 
 body {
+  max-width: 600px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 auto;
+  background: var(--color-white);
 }
 
 h1,
@@ -22,7 +28,13 @@ button {
 }
 
 main {
-  font-family: 'Montserrat', sans-serif;
+  grid-row: 2/3;
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: var(--space-medium);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  align-content: start;
 }
 
 h2 {

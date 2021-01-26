@@ -1,7 +1,7 @@
 @import '_base.css';
 @import '_utility.css';
 @import '_variables.css';
-@import '../components/_app-grid.css';
-@import '../components/_header.css';
-@import '../components/_content.css';
-@import '../components/_navigation.css';
+@import '../components/app-grid.css';
+@import '../components/header.css';
+@import '../components/content.css';
+@import '../components/navigation.css';
