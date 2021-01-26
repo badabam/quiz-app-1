@@ -1,5 +1,5 @@
 import './_navigation.css'
-import html from './navigation.html'
+import html from '../navigation.html'
 
 export default {
   title: 'Navigation',
