@@ -3,5 +3,5 @@
 @import '_variables.css';
 @import '../components/app-grid.css';
 @import '../components/header.css';
-@import '../components/content.css';
+@import '../components/quiz-card.css';
 @import '../components/navigation.css';

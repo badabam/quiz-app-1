@@ -2,8 +2,9 @@
   padding: 2px 16px;
   width: 80%;
   height: 300px;
-  border: 2px solid var(--color-dark-blue);
+  border: 2px solid var(--color-red);
   margin: 30px auto 0px;
+  background-color: #ffffff;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
@@ -16,11 +17,11 @@
   scroll-behavior: smooth;
 }
 
-[role='button'] {
+[role='content__button-bookmark1'] {
   height: 20px;
   width: 0px;
-  border: 20px solid hotpink;
-  border-bottom-color: var(--color-light-blue);
+  border: 20px solid var(--color-red);
+  border-bottom-color: #ffffff;
   top: 0px;
   right: 0px;
   position: absolute;
@@ -37,7 +38,7 @@
 .content__bookmark {
   height: 20px;
   width: 0px;
-  border: 20px solid hotpink;
+  border: 20px solid var(--color-red);
   border-bottom-color: #ffffff;
   top: 0px;
   right: 0px;
