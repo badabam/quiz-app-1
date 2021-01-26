@@ -1,0 +1,100 @@
+.content {
+  grid-row: 2/3;
+  padding: 5px auto;
+  background: lightblue;
+  overflow-y: scroll;
+}
+
+.content__area {
+  display: grid;
+  gap: 5px;
+  align-content: start;
+  scroll-behavior: smooth;
+}
+.content__quiz-card {
+  padding: 2px 16px;
+  width: 80%;
+  height: 300px;
+  border: 2px solid hotpink;
+  margin: 30px auto 0px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.content__container--scroll {
+  height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+[role='content__button-bookmark1'] {
+  height: 20px;
+  width: 0px;
+  border: 20px solid hotpink;
+  border-bottom-color: #ffffff;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  overflow: hidden;
+  cursor: default;
+}
+
+[role='content__button-bookmark1']:hover,
+[role='content__button-bookmark1']:focus,
+[role='content__button-bookmark1']:active {
+  background-color: #eeeeee;
+}
+
+.content__bookmark {
+  height: 20px;
+  width: 0px;
+  border: 20px solid hotpink;
+  border-bottom-color: #ffffff;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+
+[role='content__button-answer1'] {
+  background-color: #c7d5f6;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  height: 20px;
+  padding: 2px;
+  width: auto;
+  cursor: default;
+}
+
+[role='content__button-answer1']:hover,
+[role='content__button-answer1']:focus,
+[role='content__button-answer1']:active {
+  background-color: #eeeeee;
+}
+
+.content__answers {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2px;
+  justify-content: center;
+  list-style: none;
+  height: auto;
+  margin-left: -50px;
+  font-size: 112.5%;
+}
+
+.content__answers-style {
+  display: inline-block;
+  border: 1px solid #a8bdf1;
+  font-size: smaller;
+  padding: 5px 1px;
+  margin: 0 4px;
+  text-align: center;
+}
