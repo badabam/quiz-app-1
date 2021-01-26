@@ -1,4 +1,4 @@
-.content__quiz-card {
+.quiz-card {
   padding: 2px 16px;
   width: 80%;
   height: 300px;
@@ -9,10 +9,6 @@
   font-size: 18px;
   border-radius: 5px;
   position: relative;
-}
-
-.content__container--scroll {
-  height: 300px;
   overflow-y: auto;
   scroll-behavior: smooth;
 }
