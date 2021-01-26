@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <script defer type="module" src="./js/index.js"></script>
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -20,111 +22,97 @@
       <h1 class="header__title">Bookmarks</h1>
     </header>
 
-    <main class="content content__area">
-      <section class="content__quiz-card content__container--scroll">
-        <span
-          role="content__button-bookmark1"
-          tabindex="0"
-          onclick="handleCommand()"
-          onKeyDown="handleCommand()"
-        ></span>
+    <main>
+      <section class="quiz-card__grid">
+        <span class="quiz-card__bookmark"></span>
 
         <h2>Question 1:</h2>
         <h3>Where are the delicious "Tamales" from?</h3>
 
-        <span
-          role="content__button-answer1"
-          tabindex="0"
-          onclick="handleCommand()"
-          onKeyDown="handleCommand()"
-          >show answer</span
-        >
+        <details class="quiz-card__answer-button">
+          <summary>Show answer</summary>
+          <p>a</p>
+        </details>
 
-        <ul class="content__answers">
-          <li class="content__answers-style">a) Mexico</li>
-          <li class="content__answers-style">b) Germany</li>
-          <li class="content__answers-style">c) Chile</li>
-          <li class="content__answers-style">d) France</li>
-        </ul>
+        <section class="quiz-card__answers">
+          <span class="quiz-card__answers-option" role="button">a) Mexico</span>
+          <span class="quiz-card__answers-option" role="button"
+            >b) Germany</span
+          >
+          <span class="quiz-card__answers-option" role="button">c) Chile</span>
+          <span class="quiz-card__answers-option" role="button">d) France</span>
+        </section>
       </section>
 
-      <section class="content__quiz-card content__container--scroll">
-        <span
-          role="content__button-bookmark1"
-          tabindex="0"
-          onclick="handleCommand()"
-          onKeyDown="handleCommand()"
-        ></span>
+      <section class="quiz-card__grid">
+        <span class="quiz-card__bookmark"></span>
 
         <h2>Question 2:</h2>
         <h3>
-          If you think.. Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Rerum provident deleniti laudantium officiis totam dolorum hic
-          sapiente ipsa voluptatibus quas, recusandae molestiae laborum
-          aspernatur non tempora iure doloribus sunt. Quidem!
+          What do you get in a restaurant in Thailand when you order "Tom Yum
+          Kung"?
         </h3>
 
-        <span
-          role="content__button-answer1"
-          tabindex="0"
-          onclick="handleCommand()"
-          onKeyDown="handleCommand()"
-          >show answer</span
-        >
+        <details class="quiz-card__answer-button">
+          <summary>Show answer</summary>
+          <p>a</p>
+        </details>
 
-        <ul class="content__answers">
-          <li class="content__answers-style">a) Me</li>
-          <li class="content__answers-style">b) Ge</li>
-          <li class="content__answers-style">c) Chi</li>
-          <li class="content__answers-style">d) Fra</li>
-        </ul>
+        <section class="quiz-card__answers">
+          <span class="quiz-card__answers-option" role="button"
+            >a) A sour and spicy rice bowl</span
+          >
+          <span class="quiz-card__answers-option" role="button"
+            >b) Special noodles</span
+          >
+          <span class="quiz-card__answers-option" role="button"
+            >c) A sour and spicy soup</span
+          >
+          <span class="quiz-card__answers-option" role="button"
+            >d) A dessert</span
+          >
+        </section>
       </section>
 
-      <section class="content__quiz-card content__container--scroll">
-        <span
-          role="content__button-bookmark1"
-          tabindex="0"
-          onclick="handleCommand()"
-          onKeyDown="handleCommand()"
-        ></span>
+      <section class="quiz-card__grid">
+        <span class="quiz-card__bookmark"></span>
 
         <h2>Question 3:</h2>
-        <h3>If you think...</h3>
+        <h3>
+          What is the minimum percentage of alcohol a table wine must have?
+        </h3>
 
-        <span
-          role="content__button-answer1"
-          tabindex="0"
-          onclick="handleCommand()"
-          onKeyDown="handleCommand()"
-          >show answer</span
-        >
+        <details class="quiz-card__answer-button">
+          <summary>Show answer</summary>
+          <p>a</p>
+        </details>
 
-        <ul class="content__answers">
-          <li class="content__answers-style">a) Me</li>
-          <li class="content__answers-style">b) Ge</li>
-          <li class="content__answers-style">c) Chi</li>
-          <li class="content__answers-style">d) Fra</li>
-        </ul>
+        <section class="quiz-card__answers">
+          <span class="quiz-card__answers-option" role="button">a) 8% </span>
+          <span class="quiz-card__answers-option" role="button">b) 7%</span>
+          <span class="quiz-card__answers-option" role="button">c) 8.5%</span>
+          <span class="quiz-card__answers-option" role="button">d) 9%</span>
+        </section>
       </section>
     </main>
 
     <footer class="footer">
       <nav class="navigation">
-        <a href="#" class="navigation__link">
+        <a href="./index.html" class="navigation__link">
           <i class="material-icons navigation__icon">home</i>
           <span class="navigation__text">Home</span>
         </a>
 
-        <a href="#" class="navigation__link">
+        <a href="#" class="navigation__link navigation__link--active">
           <i class="material-icons navigation__icon">bookmark</i>
           <span class="navigation__text">Bookmarks</span>
         </a>
-        <a href="#" class="navigation__link">
+        <a href="./create.html" class="navigation__link">
           <i class="material-icons navigation__icon">create</i>
           <span class="navigation__text">Create</span>
         </a>
 
-        <a href="#" class="navigation__link navigation__link--active">
+        <a href="./profile.html" class="navigation__link">
           <i class="material-icons navigation__icon">person</i>
           <span class="navigation__text">Profile</span>
         </a>
