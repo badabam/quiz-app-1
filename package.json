@@ -25,15 +25,15 @@
   "description": "",
   "devDependencies": {
     "@babel/core": "^7.12.10",
-    "@storybook/addon-actions": "^6.1.14",
-    "@storybook/addon-essentials": "^6.1.14",
-    "@storybook/addon-links": "^6.1.14",
-    "@storybook/html": "^6.1.14",
+    "@storybook/addon-actions": "^6.1.15",
+    "@storybook/addon-essentials": "^6.1.15",
+    "@storybook/addon-links": "^6.1.15",
+    "@storybook/html": "^6.1.15",
     "babel-loader": "^8.2.2",
     "htmlhint": "^0.14.2",
     "prettier": "2.2.1",
     "snowpack": "^3.0.11",
-    "stylelint": "^13.8.0",
+    "stylelint": "^13.9.0",
     "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
