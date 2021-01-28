@@ -3,6 +3,9 @@
 }
 
 body {
+  display: grid;
+  grid-template-rows: 48px auto 48px;
+  height: 100vh;
   max-width: 600px;
   position: fixed;
   left: 0;
@@ -13,6 +16,10 @@ body {
   line-height: 1.5;
   margin: 0 auto;
   background: var(--color-white);
+}
+
+.hidden {
+  display: none !important;
 }
 
 h1,

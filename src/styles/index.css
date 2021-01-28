@@ -1,8 +1,8 @@
 @import './_base.css';
 @import './_utility.css';
 @import './_variables.css';
-@import '../components/app-grid.css';
 @import '../components/header.css';
+@import '../components/app-grid.css';
 @import '../components/quiz-card.css';
 @import '../components/navigation.css';
 @import '../components/text-area.css';
