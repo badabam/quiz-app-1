@@ -12,60 +12,22 @@
   position: relative;
 }
 
-.quiz-card__bookmark--active {
+.quiz-card__bookmark {
   position: absolute;
   top: -20px;
   right: 50px;
   height: 0px;
   width: 0px;
+  color: var(--color-black);
+}
+
+.quiz_card__bookmark--background {
   color: var(--color-red);
 }
 
-.quiz-card__bookmark--inactive {
-  position: absolute;
-  top: -20px;
-  right: 50px;
-  height: 0px;
-  width: 0px;
-  border: 2px solid var(--color-red);
+.quiz_card__space-under {
+  position: relative;
 }
-
-/*
-
-
-  
-
-
-.quiz-card__bookmark {
-  position: absolute;
-  right: var(--space-medium);
-  top: -8px;
-  font-size: 2em;
-  color: var(--color-rich-black);
-  text-decoration: none;
-}
-
-.quiz-card__bookmark.quiz-card__bookmark--active,
-.quiz-card__bookmark:hover {
-  color: var(--color-sky-blue1);
-  transition: all 0.3s ease-out;
-}
-
-*/
-
-/*
-.quiz-card__bookmark--active CAMBIAR EN TODOS LADOS {
-  height: 20px;
-  width: 0px;
-  border: 20px solid var(--color-red);
-  border-bottom-color: #ffffff;
-  top: 0px;
-  right: 0px;
-  position: absolute;
-  overflow: hidden;
-  cursor: default;
-}
-*/
 
 .quiz-card__grid > *:last-child {
   position: relative;

@@ -58,51 +58,45 @@ navBtn4.addEventListener('click', () => {
   navBtn4.classList.add('navigation__link--active')
 })
 
-/* navBtn1.addEventListener('click', () => {
-  page1.classList.remove('hidden')
-  page2.classList.add('hidden')
-  page3.classList.add('hidden')
-  page4.classList.add('hidden')
+// bookmark on off WORKS
 
-  navBtn1.classList.add('navigation__link--active')
-  navBtn2.classList.remove('navigation__link--active')
-  navBtn3.classList.remove('navigation__link--active')
-  navBtn4.classList.remove('navigation__link--active')
+const bookmarkBtn1 = getElement('bookmarkBtn1')
+const bookmarkBtn2 = getElement('bookmarkBtn2')
+const bookmarkBtn3 = getElement('bookmarkBtn3')
+const bookmarkOnOff1 = getElement('bookmarkOnOff1')
+const bookmarkOnOff2 = getElement('bookmarkOnOff2')
+const bookmarkOnOff3 = getElement('bookmarkOnOff3')
+
+bookmarkBtn1.addEventListener('click', () => {
+  bookmarkOnOff1.classList.toggle('quiz_card__bookmark--background')
 })
 
-navBtn2.addEventListener('click', () => {
-  page1.cla
-  page2.classList.remove('hidden')
-  page3.classList.add('hidden')
-  page4.classList.add('hidden')
-
-  navBtn1.classList.remove('navigation__link--active')
-  navBtn2.classList.add('navigation__link--active')
-  navBtn3.classList.remove('navigation__link--active')
-  navBtn4.classList.remove('navigation__link--active')
+bookmarkBtn2.addEventListener('click', () => {
+  bookmarkOnOff2.classList.toggle('quiz_card__bookmark--background')
 })
 
-navBtn3.addEventListener('click', () => {
-  page1.classList.add('hidden')
-  page2.classList.add('hidden')
-  page3.classList.remove('hidden')
-  page4.classList.add('hidden')
-
-  navBtn1.classList.remove('navigation__link--active')
-  navBtn2.classList.remove('navigation__link--active')
-  navBtn3.classList.add('navigation__link--active')
-  navBtn4.classList.remove('navigation__link--active')
+bookmarkBtn3.addEventListener('click', () => {
+  bookmarkOnOff3.classList.toggle('quiz_card__bookmark--background')
 })
 
-navBtn4.addEventListener('click', () => {
-  page1.classList.add('hidden')
-  page2.classList.add('hidden')
-  page3.classList.add('hidden')
-  page4.classList.remove('hidden')
+function getElement(dataJsName) {
+  return document.querySelector(`[data-js="${dataJsName}"]`)
+}
 
-  navBtn1.classList.remove('navigation__link--active')
-  navBtn2.classList.remove('navigation__link--active')
-  navBtn3.classList.remove('navigation__link--active')
-  navBtn4.classList.add('navigation__link--active')
+/*
+const bookmarkBtns = getElement('bookmarkBtn')
+
+bookmarkBtns.forEach(btn => {
+  const bookmarkOnOff = btn.querySelector('[data-js="bookmarkOnOff"]')
+
+  bookmarkOnOff.addEventListener('click', () => {
+    bookmarkOnOff.classList.toggle('quiz_card__bookmark--background')
+  })
 })
+
+function getElement(dataJsName) {
+  return document.querySelector(`[data-js="${dataJsName}"]`)
+}
 */
+
+// Show answer on/off
