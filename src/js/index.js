@@ -100,3 +100,14 @@ function getElement(dataJsName) {
 */
 
 // Show answer on/off
+
+const cards = document.querySelectorAll('[data-js="quizCard"')
+
+cards.forEach(card => {
+  const button = card.querySelector('[data-js="quizBtnAnswer"]')
+  const answer = card.querySelector('[data-js="quizAnswer"]')
+
+  button.addEventListener('click', () => {
+    answer.classList.toggle('hidden')
+  })
+})
