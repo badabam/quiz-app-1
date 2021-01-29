@@ -83,7 +83,7 @@ function getElement(dataJsName) {
   return document.querySelector(`[data-js="${dataJsName}"]`)
 }
 
-/*
+/* DOES NOT WORK
 const bookmarkBtns = getElement('bookmarkBtn')
 
 bookmarkBtns.forEach(btn => {
