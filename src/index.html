@@ -24,9 +24,18 @@
     </header>
 
     <main>
-      <section data-js="page1">
+      <section data-js="home">
         <section class="quiz-card__grid">
-          <span class="quiz-card__bookmark"></span>
+
+
+
+          <a
+          href="#"
+          class="quiz-card__bookmark--active"
+          title="Bookmark this Quiz Card"
+        ><i class="material-icons navigation__icon icon__font-size">bookmark</i></a>
+
+        
 
           <h2>Question 1:</h2>
           <h3>Where are the delicious "Tamales" from?</h3>
@@ -53,10 +62,15 @@
         </section>
 
         <section class="quiz-card__grid">
-          <span class="quiz-card__bookmark"></span>
+          <a
+          href="#"
+          class="quiz-card__bookmark--active"
+          title="Bookmark this Quiz Card"
+        ><i class="material-icons navigation__icon icon__font-size">bookmark</i></a>
+
 
           <h2>Question 2:</h2>
-          <h3>
+          <h3 class="mt-0">
             What do you get in a restaurant in Thailand when you order "Tom Yum
             Kung"?
           </h3>
@@ -83,10 +97,15 @@
         </section>
 
         <section class="quiz-card__grid">
-          <span class="quiz-card__bookmark"></span>
+          <a
+          href="#"
+          class="quiz-card__bookmark--active"
+          title="Bookmark this Quiz Card"
+        ><i class="material-icons navigation__icon icon__font-size">bookmark</i></a>
+
 
           <h2>Question 3:</h2>
-          <h3>
+          <h3 class="mt=0">
             What is the minimum percentage of alcohol a table wine must have?
           </h3>
 
@@ -111,12 +130,12 @@
           </section>
         </section>
 
-        <section hidden data-js="page2">
+        <section hidden data-js="bookmarks">
           <section class="quiz-card__grid">
             <span class="quiz-card__bookmark"></span>
   
             <h2>Question 2:</h2>
-            <h3>
+            <h3 class="mt=0">
               What do you get in a restaurant in Thailand when you order "Tom Yum
               Kung"?
             </h3>
@@ -143,7 +162,7 @@
           </section>
         </section>
 
-        <section hidden data-js="page3">
+        <section hidden data-js="create">
         <section>
           <fieldset>
               <label class="text-area__label" for="motto">Add question:</label>
@@ -161,7 +180,7 @@
             </section>
         </section>
 
-        <section hidden data-js="page4">
+        <section hidden data-js="profile">
         <section>
           <fieldset>
               <label class="text-area__label" for="motto">About you:</label>
@@ -185,14 +204,13 @@
       <nav class="navigation">
         <a
           data-js="nav-btn-1"
-          href="#"
           class="navigation__link navigation__link--active"
         >
           <i class="material-icons navigation__icon">home</i>
           <span class="navigation__text">Home</span>
         </a>
 
-        <a data-js="nav-btn-2" href="./bookmarks.html" class="navigation__link">
+        <a data-js="nav-btn-2" class="navigation__link">
           <i class="material-icons navigation__icon">bookmark</i>
           <span class="navigation__text">Bookmarks</span>
         </a>
@@ -209,3 +227,4 @@
     </footer>
   </body>
 </html>
+

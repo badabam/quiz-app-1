@@ -1,9 +1,9 @@
 console.clear()
 
-const page1 = document.querySelector('[data-js=page1]')
-const page2 = document.querySelector('[data-js=page2]')
-const page3 = document.querySelector('[data-js=page3]')
-const page4 = document.querySelector('[data-js=page4]')
+const home = document.querySelector('[data-js=home]')
+const bookmarks = document.querySelector('[data-js=bookmarks]')
+const create = document.querySelector('[data-js=create]')
+const profile = document.querySelector('[data-js=profile]')
 
 const navBtn1 = document.querySelector('[data-js=nav-btn-1]')
 const navBtn2 = document.querySelector('[data-js=nav-btn-2]')
@@ -11,10 +11,10 @@ const navBtn3 = document.querySelector('[data-js=nav-btn-3]')
 const navBtn4 = document.querySelector('[data-js=nav-btn-4]')
 
 navBtn1.addEventListener('click', () => {
-  page1.hidden = false
-  page2.hidden = true
-  page3.hidden = true
-  page4.hidden = true
+  home.hidden = false
+  bookmarks.hidden = true
+  create.hidden = true
+  profile.hidden = true
 
   navBtn1.classList.add('navigation__link--active')
   navBtn2.classList.remove('navigation__link--active')
@@ -23,10 +23,10 @@ navBtn1.addEventListener('click', () => {
 })
 
 navBtn2.addEventListener('click', () => {
-  page1.hidden = true
-  page2.hidden = false
-  page3.hidden = true
-  page4.hidden = true
+  home.hidden = true
+  bookmarks.hidden = false
+  create.hidden = true
+  profile.hidden = true
 
   navBtn1.classList.remove('navigation__link--active')
   navBtn2.classList.add('navigation__link--active')
@@ -35,10 +35,10 @@ navBtn2.addEventListener('click', () => {
 })
 
 navBtn3.addEventListener('click', () => {
-  page1.hidden = true
-  page2.hidden = true
-  page3.hidden = false
-  page4.hidden = true
+  home.hidden = true
+  bookmarks.hidden = true
+  create.hidden = false
+  profile.hidden = true
 
   navBtn1.classList.remove('navigation__link--active')
   navBtn2.classList.remove('navigation__link--active')
@@ -47,10 +47,10 @@ navBtn3.addEventListener('click', () => {
 })
 
 navBtn4.addEventListener('click', () => {
-  page1.hidden = true
-  page2.hidden = true
-  page3.hidden = true
-  page4.hidden = false
+  home.hidden = true
+  bookmarks.hidden = true
+  create.hidden = true
+  profile.hidden = false
 
   navBtn1.classList.remove('navigation__link--active')
   navBtn2.classList.remove('navigation__link--active')

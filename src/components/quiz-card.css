@@ -8,23 +8,32 @@
   margin: 30px auto -5px;
   background-color: #ffffff;
   text-align: center;
-  font-size: 18px;
   border-radius: 5px;
   position: relative;
 }
 
-.quiz-card__bookmark {
+.quiz-card__bookmark--active {
   position: absolute;
-  top: -15px;
-  right: 10px;
-  height: 20px;
+  top: -20px;
+  right: 50px;
+  height: 0px;
   width: 0px;
-  border: 20px solid var(--color-red);
-  border-bottom-color: #ffffff;
-  overflow: hidden;
+  color: var(--color-red);
+}
+
+.quiz-card__bookmark--inactive {
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  height: 0px;
+  width: 0px;
+  border: 2px solid var(--color-red);
 }
 
 /*
+
+
+  
 
 
 .quiz-card__bookmark {

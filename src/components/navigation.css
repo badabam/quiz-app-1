@@ -39,4 +39,6 @@
 
 .navigation__link--active {
   color: var(--color-white);
+  background: transparent;
+  border: none;
 }
