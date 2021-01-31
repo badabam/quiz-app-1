@@ -1,0 +1,30 @@
+.form__grid {
+  display: grid;
+  width: 90%;
+}
+
+.form__fieldset {
+  display: block;
+  border: none;
+  font-family: inherit;
+  width: 100%;
+  margin: 10px 10px 20px;
+}
+
+.form__label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.form__text-input {
+  font-size: 16px;
+  line-height: 1.5;
+  border: 2px solid var(--color-white-green);
+  background-color: var(--color-white-green);
+  outline: 0;
+  width: 100%;
+  -moz-appearance: none;
+  padding: 10px;
+}
