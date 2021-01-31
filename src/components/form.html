@@ -1,16 +1,49 @@
+<section class="form__grid">
+  <fieldset class="form__fieldset">
+    <div data-js="formInput">
+      <label class="form__label mb-10 mt-20" for="addquestion"
+        >Add question:</label
+      >
+      <textarea
+        maxlength="100"
+        name="question"
+        class="form__text-input"
+        rows="5"
+        cols="80"
+        placeholder="..."
+        data-js="textarea"
+      ></textarea>
+      <span class="form__counter" data-js="counter"></span>
+    </div>
 
-<section>
-<fieldset>
-    <label class="text-area__label" for="motto">Add question:</label>
-    <textarea class="text-area__text-input" rows="3"></textarea>
-    <label class="text-area__label mb-10" for="notes">Add answer:</label>
-    <textarea class="text-area__text-input" rows="3"></textarea>
-    <label class="text-area__label mb-10" for="notes">Add tags:</label>
-    <textarea class="text-area__text-input" rows="1"></textarea>
+    <div data-js="formInput">
+      <label class="form__label mb-10 mt-20" for="addanswer">Add answer:</label>
+      <textarea
+        maxlength="100"
+        name="question"
+        class="form__text-input"
+        rows="3"
+        cols="80"
+        placeholder="..."
+        data-js="textarea"
+      ></textarea>
+      <span class="form__counter" data-js="counter"></span>
+    </div>
+
+    <div data-js="formInput">
+      <label class="form__label mb-10 mt-20" for="addtags">Add tags:</label>
+      <textarea
+        maxlength="50"
+        name="question"
+        class="form__text-input"
+        rows="1"
+        cols="80"
+        placeholder="..."
+        data-js="textarea"
+      ></textarea>
+      <span class="form__counter" data-js="counter"></span>
+    </div>
   </fieldset>
 
-  <div class="text-area__buttons">
-    <button class="button" type="button">
-      Submit
-    </button>
+  <button type="button" class="buttons button-single">Submit</button>
 </section>

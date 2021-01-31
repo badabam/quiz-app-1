@@ -10,9 +10,10 @@
   font-family: inherit;
 }
 
-.button--block {
+.button-small {
   display: block;
   width: 60%;
+  text-align: center !important;
 }
 
 .button-single {

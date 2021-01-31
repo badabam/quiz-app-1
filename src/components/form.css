@@ -28,3 +28,8 @@
   -moz-appearance: none;
   padding: 10px;
 }
+
+.form__counter {
+  font-size: 14px;
+  color: var(--color-gray);
+}
