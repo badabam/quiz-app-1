@@ -36,11 +36,11 @@
         
 
           <h2>Question 1:</h2>
-          <h3>Where are the delicious "Tamales" from?</h3>
+          <h3 class="mt-0">Where are the delicious "Tamales" from?</h3>
 
 
-          <button data-js="quizBtnAnswer">Show answer</button>
-            <p class= "hidden" data-js="quizAnswer">Mexico</p>
+          <button class="buttons button--block" data-js="quizBtnAnswer">Show answer</button>
+            <p class= "hidden buttons mt-5 mb-5 button--block" data-js="quizAnswer">Mexico</p>
 
           <section class="quiz-card__tags">
             <span class="quiz-card__tags-option" role="button"
@@ -72,9 +72,9 @@
             Kung"?
           </h3>
 
-          <button data-js="quizBtnAnswer">Show answer</button>
-            <p classs= "hidden" data-js="quizAnswer">A sour and spicy soup</p>
-          
+            <button class="buttons button--block" data-js="quizBtnAnswer">Show answer</button>
+            <p class= "hidden buttons mt-5 mb-5 button--block" data-js="quizAnswer">A sour and spicy soup</p>
+
 
           <section class="quiz-card__tags">
             <span class="quiz-card__tags-option" role="button"
@@ -100,15 +100,15 @@
         ><i data-js="bookmarkOnOff3" class="material-icons icon__font-size">bookmark_border</i></a>
 
 
-          <h2>Question 3:</h2>
+          <h2 class="mb=0">Question 3:</h2>
           <h3 class="mt=0">
             What is the minimum percentage of alcohol a table wine must have?
           </h3>
 
-          
-            <button data-js="quizBtnAnswer">Show answer</button>
-            <p class= "hidden" data-js="quizAnswer">8.5%</p>
-        
+
+            <button class="buttons button--block" data-js="quizBtnAnswer">Show answer</button>
+            <p class= "hidden buttons mt-5 mb-5 button--block" data-js="quizAnswer">8.5%</p>
+
 
           <section class="quiz-card__tags">
             <span class="quiz-card__tags-option" role="button"
@@ -133,49 +133,51 @@
 
         <section hidden data-js="bookmarks">
           <section data-js= "quizCard" class="quiz-card__grid">
-            <span class="quiz-card__bookmark"></span>
-  
-            <h2>Question 2:</h2>
-            <h3 class="mt=0">
-              What do you get in a restaurant in Thailand when you order "Tom Yum
-              Kung"?
-            </h3>
-  
-            <button data-js="quizBtnAnswer">Show answer</button>
-            <p data-js="quizAnswer">A sour and spicy soup</p>
-  
-            <section class="quiz-card__tags">
-              <span class="quiz-card__tags-option" role="button"
-                >#Foodies</span
-              >
-              <span class="quiz-card__tags-option" role="button"
-                >#Geography</span
-              >
-              <span class="quiz-card__tags-option" role="button"
-                >#Travel</span
-              >
-              <span class="quiz-card__tags-option" role="button"
-                >#Latin America</span
-              >
+            
+          
+              <h2>Question 2:</h2>
+              <h3 class="mt-0">
+                What do you get in a restaurant in Thailand when you order "Tom Yum
+                Kung"?
+              </h3>
+    
+                <button class="buttons button--block" data-js="quizBtnAnswer">Show answer</button>
+                <p class= "hidden buttons mt-5 mb-5 button--block" data-js="quizAnswer">A sour and spicy soup</p>
+    
+    
+              <section class="quiz-card__tags">
+                <span class="quiz-card__tags-option" role="button"
+                  >#Foodies</span
+                >
+                <span class="quiz-card__tags-option" role="button"
+                  >#Geography</span
+                >
+                <span class="quiz-card__tags-option" role="button"
+                  >#Travel</span
+                >
+                <span class="quiz-card__tags-option" role="button"
+                  >#Latin America</span
+                >
+              </section>
             </section>
-          </section>
         </section>
-
+           
         <section hidden data-js="create">
         <section>
           <fieldset>
-              <label class="text-area__label" for="motto">Add question:</label>
+              <label class="text-area__label mb-10 mt-20" for="addquestion">Add question:</label>
+              <textarea name="question" class="text-area__text-input" rows="5" cols="45"placeholder="Please type here."></textarea>
+              <label class="text-area__label mb-10 mt-20" for="addanswer">Add answer:</label>
               <textarea class="text-area__text-input" rows="3"></textarea>
-              <label class="text-area__label mb-10" for="notes">Add answer:</label>
-              <textarea class="text-area__text-input" rows="3"></textarea>
-              <label class="text-area__label mb-10" for="notes">Add tags:</label>
+              <label class="text-area__label mb-10 mt-20" for="addtags">Add tags:</label>
               <textarea class="text-area__text-input" rows="1"></textarea>
             </fieldset>
           
-            <div class="text-area__buttons">
-              <button class="button" type="button">
-                Submit
-              </button>
+        
+          
+              <button type="button" class= "buttons button-single">Submit</button>
+            
+              
             </section>
         </section>
 
@@ -191,9 +193,8 @@
             </fieldset>
           
             <div class="text-area__buttons">
-              <button class="button" type="button">
-                Logout
-              </button>
+
+              <button type="button" class= "buttons button-single">Logout</button>
         
               </section>
         </section>

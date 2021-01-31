@@ -1,0 +1,23 @@
+.buttons {
+  background-color: var(--color-white-green);
+  border: none;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 12px 30px 12px;
+  font-size: 16px;
+  cursor: default;
+}
+
+.button--block {
+  display: block;
+  width: 60%;
+}
+
+.button-single {
+  display: inline-block;
+  margin-top: 5px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center !important;
+}
