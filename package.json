@@ -10,6 +10,12 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
   "keywords": [],
   "author": "Berenice Pendzialek <berenice.pendzialek@gmail.com>",
   "license": "ISC",
@@ -37,6 +43,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "htmlhint": "^0.14.2",
+    "husky": "^4.3.8",
     "prettier": "2.2.1",
     "snowpack": "^3.0.11",
     "stylelint": "^13.9.0",

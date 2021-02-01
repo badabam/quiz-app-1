@@ -18,8 +18,7 @@
 
 .button-single {
   display: inline-block;
-  margin-top: 5px;
-  width: 50%;
   margin: 0 auto;
+  width: 50%;
   text-align: center !important;
 }
