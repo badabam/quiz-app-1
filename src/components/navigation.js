@@ -1,6 +1,27 @@
-import getByDataJs from '../components/getByDataJs'
+import getAllByDataJs from './getAllByDataJs'
 
 export default function navigation() {
+  const pages = getAllByDataJs('page')
+  const navButtons = getAllByDataJs('nav')
+
+  navButtons.forEach(button => {
+    const clickedButtonName = button.dataset.name
+    button.addEventListener('click', () => {
+      pages.forEach(page => {
+        const pageName = page.dataset.name
+        page.classList.toggle('hidden', clickedButtonName !== pageName)
+      })
+      navButtons.forEach(button => {
+        button.classList.toggle(
+          'navigation__link--active',
+          clickedButtonName === button.dataset.name
+        )
+      })
+    })
+  })
+}
+
+/*
   const home = getByDataJs('home')
   const bookmarks = getByDataJs('bookmarks')
   const create = getByDataJs('create')
@@ -59,3 +80,4 @@ export default function navigation() {
     navBtn4.classList.add('navigation__link--active')
   })
 }
+*/
