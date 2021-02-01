@@ -1,4 +1,4 @@
-import getAllByDataJs from '../components/getAllByDataJs'
+import getAllByDataJs from './getAllByDataJs'
 
 export default function cards() {
   const cards = getAllByDataJs('quizCard')
