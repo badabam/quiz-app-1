@@ -31,8 +31,9 @@
 }
 
 .navigation__link:hover {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
+
 .navigation__icon {
   font-size: 18px;
 }
