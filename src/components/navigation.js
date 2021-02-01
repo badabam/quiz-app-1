@@ -3,6 +3,7 @@ import getAllByDataJs from './getAllByDataJs'
 export default function navigation() {
   const pages = getAllByDataJs('page')
   const navButtons = getAllByDataJs('nav')
+  const foo = 'bar'
 
   navButtons.forEach(button => {
     const clickedButtonName = button.dataset.name
